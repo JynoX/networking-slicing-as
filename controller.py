@@ -18,7 +18,7 @@ from subprocess import PIPE, STDOUT, check_output
 import logging
 
 from typing import List, Optional, Dict, Set, Tuple
-from slicing.work_emergency import get_work_emergency_forbidden, get_work_emergency_mac_mapping
+from slicing.emergency_slice import get_emergency_forbidden, get_emergency_mac_mapping
 
 from slicing.conference_slice import get_conference_forbidden, get_conference_mac_mapping
 
@@ -55,8 +55,8 @@ class Slicing(app_manager.RyuApp):
         self.mac_to_port[Mode.CONFERENCE_MODE] = get_conference_mac_mapping()
         self.forbidden[Mode.CONFERENCE_MODE] = get_conference_forbidden()
 
-        self.mac_to_port[Mode.WORK_EMERGENCY_MODE] = get_work_emergency_mac_mapping()
-        self.forbidden[Mode.WORK_EMERGENCY_MODE] = get_work_emergency_forbidden()
+        self.mac_to_port[Mode.WORK_EMERGENCY_MODE] = get_emergency_mac_mapping()
+        self.forbidden[Mode.WORK_EMERGENCY_MODE] = get_emergency_forbidden()
         
         # The datapaths (of the switches) to send the delete command to 
         self.switch_datapaths_cache = {}

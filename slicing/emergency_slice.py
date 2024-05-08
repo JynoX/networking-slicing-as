@@ -1,7 +1,7 @@
 
 from .net_structure import all_macs, mac 
 
-def get_work_emergency_mac_mapping():
+def get_emergency_mac_mapping():
     return {
         1: {
             # Direct connections
@@ -59,7 +59,7 @@ def get_work_emergency_mac_mapping():
         # vc1 e vc2 a h5
 
 
-def get_work_emergency_forbidden():
+def get_emergency_forbidden():
     # Isolating gaming hosts and server
 
     isolated_hosts = set([ mac("vc1"), mac("vc2"), mac("ds")])
