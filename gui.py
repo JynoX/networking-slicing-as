@@ -47,7 +47,7 @@ style = {"pady": (0, 10)}
 work_button = tk.Button(root, text="WORK", bg="green", command=lambda: send_slice("WORK"))
 work_button.grid(row=1, column=0, sticky="w", padx=(10, 0), **style)
 
-conference_button = tk.Button(root, text="CONFERENCE", bg="yellow", command=lambda: send_slice("CONFERENCE"))
+conference_button = tk.Button(root, text="CONFERENCE", bg="blue", command=lambda: send_slice("CONFERENCE"))
 conference_button.grid(row=1, column=0, sticky="w", padx=(110, 0), pady=(0, 10))
 
 emergency_button = tk.Button(root, text="EMERGENCY", bg="red", command=lambda: send_slice("EMERGENCY"))
