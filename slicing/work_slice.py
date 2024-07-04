@@ -70,7 +70,7 @@ def get_work_mac_mapping():
             # Direct connections
             mac("ds"): 4,
 
-            # Slow gaming connections
+            # Slow conference connections
             mac("vc1"): 1,
             mac("vc2"): 3,
 
@@ -103,7 +103,7 @@ def get_work_mac_mapping():
 
 
 def get_work_forbidden():
-    # For gaming hosts, forbidden communications to work hosts and production server
+    # For conference hosts, forbidden communications to work hosts and production server
     conferencce_host_forbidden = set([ mac("h1"), mac("h2"), mac("h3"), mac("h4"), mac("ps") ])
 
     # For work hosts, forbidden communications to gaming hosts and gaming server
