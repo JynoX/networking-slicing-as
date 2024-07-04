@@ -10,7 +10,7 @@ def get_conference_mac_mapping():
             # Fast connection
             mac("h3"): 1, mac("h4"): 1, mac("h5"): 1,
 
-            # Fast connection even for gaming
+            # Fast connection for conference
             mac("ds"): 1, mac("vc2"): 1
         },
 
@@ -21,7 +21,7 @@ def get_conference_mac_mapping():
             # Fast connection
             mac("h1"): 1, mac("h2"): 1, mac("h3"): 3, mac("h4"): 3,
 
-            # Fast connection for gaming
+            # Fast connection for conference
             mac("vc1"): 1, mac("vc2"): 3,
             mac("ds"): 2,
 
@@ -35,7 +35,7 @@ def get_conference_mac_mapping():
             # Fast connection
             mac("h1"): 1, mac("h2"): 1, mac("h5"): 1,
 
-            # Fast connection for gaming
+            # Fast connection for conference
             mac("ds"): 1, mac("vc1"): 1,
         },
 
@@ -43,16 +43,13 @@ def get_conference_mac_mapping():
             # Direct connections
             mac("ds"): 4,
 
-            # Fast gaming connections
+            # Fast conference connections
             mac("vc1"): 1, mac("vc2"): 2,
 
             mac("h1"): 2, mac("h2"): 2, mac("h3"): 2, mac("h4"): 2, mac("h5"): 2,
         },
 
         5: {
-            # No production server i gaming mode
-            # mac("ps"): 3,
-
             # fast connection
             mac("h1"): 1, mac("h2"): 1, mac("h3"): 1, mac("h4"): 1, mac("h5"): 1,
             mac("vc2"): 1, mac("vc1"): 1,
@@ -61,9 +58,6 @@ def get_conference_mac_mapping():
         },
     }
 
-
-        # TODO: ma h5? sarebbe figo fare una linea a 100mb che passa per 4-5-2 per connettere
-        # vc1 e vc2 a h5
 
 
 def get_conference_forbidden():
