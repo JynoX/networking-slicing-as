@@ -10,6 +10,11 @@ The network topology comprises:
 
 ## Project Description
 
+### GUI
+To switch between modes GUI is required
+
+![images](images/GUI.png)
+
 Depending on the selected mode the bandwidth is divided between the slices.
 
 ### 1. WORK MODE
