@@ -55,12 +55,10 @@ def get_emergency_mac_mapping():
     }
 
 
-        # TODO: ma h5? sarebbe figo fare una linea a 100mb che passa per 4-5-2 per connettere
-        # vc1 e vc2 a h5
 
 
 def get_emergency_forbidden():
-    # Isolating gaming hosts and server
+    # Isolating conference hosts and server
 
     isolated_hosts = set([ mac("vc1"), mac("vc2"), mac("ds")])
 
